@@ -10,9 +10,9 @@
 
   /* Accent hue */
   --dark-accent-hue: 80;
-  --light-accent-hue: 260;
+  /* --light-accent-hue: 260; */
   /* Ucomment the line below to use the same hue for both light and dark theme */
-  /* --light-accent-hue: var(--dark-accent-hue); */
+  --light-accent-hue: var(--dark-accent-hue);
 
   /* Default (light) theme */
   --bg: oklch(100% 0.008 var(--light-accent-hue));

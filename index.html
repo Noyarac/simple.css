@@ -17,6 +17,12 @@
 </head>
 
 <body id="top">
+	<aside style="position: fixed; top: 3rem; right: 1rem; width: inherit">
+		<h3>Custom color</h3>
+		<input type="range" min="0" max="359" id="hueSlider" oninput="document.documentElement.style.setProperty('--dark-accent-hue', this.value);document.getElementById('hueDeg').value = this.value">
+		<label for="hueDeg">Hue degree</label>
+		<input type="number" id="hueDeg" oninput="document.documentElement.style.setProperty('--dark-accent-hue', this.value);document.getElementById('hueSlider').value = this.value">
+	</aside>
 	<header>
 		<h1>Simple.css Test Page</h1>
 		<p>This is a test page filled with common HTML elements.</p>
